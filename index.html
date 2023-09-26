@@ -1,42 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Titulo</title>
 </head>
-<body>
-    <header>
-        <h1  class="textoSO">
-            Aplicaciones de Sistemas Operativos Mobiles
-        </h1>
-        <nav>
-            <ul>
-                <li>
-                    <h1 class="fontAndroid">
-                        <a href="#jumpPS" id="colorAndroid">En Android</a>
-                    </h1>
-                </li>
-                <li>
-                    <h1 class="fontIOS">
-                        <a href="#jumpAS" id="colorIOS">En iOS</a>
-                    </h1>
-                </li>
-                <li>
-                    <h1 style="text-shadow: 5px 5px 5px rgba(95, 99, 104, 25%) ;">
-                        <a href="#jumpSO" id="colorSO">En ambos Sistemas Operativos</a>
-                    </h1>
-                </li>
-            </ul>
-        </nav>
-        <div id="shadowHeaderBottom">
-            <hr style="height: 0px; opacity: 0;;">
-        </div>
-    </header>
 
+<body>
+    <section class="no-parallax-content">
+        <header>
+            <h1  class="textoSO">
+                Aplicaciones de Sistemas Operativos Mobiles
+            </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <h1 class="fontAndroid">
+                            <a href="#jumpPS" id="colorAndroid">En Android</a>
+                        </h1>
+                    </li>
+                    <li>
+                        <h1 class="fontIOS">
+                            <a href="#jumpAS" id="colorIOS">En iOS</a>
+                        </h1>
+                    </li>
+                    <li>
+                        <h1 style="text-shadow: 5px 5px 5px rgba(95, 99, 104, 25%) ;">
+                            <a href="#jumpSO" id="colorSO">En ambos Sistemas Operativos</a>
+                        </h1>
+                    </li>
+                </ul>
+            </nav>
+            <div id="shadowHeaderBottom">
+                <hr style="height: 0px; opacity: 0;;">
+            </div>
+        </header>
+    </section>
+
+    <div style="display: flex;">
     <div style="display: flex; flex-wrap: wrap;">
-        <section class="fontAndroid" style="width: 70%;">
+        <section class="parallax-content">
+            <section class="fontAndroid">
             <h1 class="textoSO" id="jumpPS">
                 Aplicaciones Exclusivas de Play Store
             </h1>
@@ -65,9 +71,9 @@
                     <a href="https://play.google.com/store/apps/details?id=com.digibites.accubattery&hl=es_AR&gl=US"><img src="images/AccuBattery.webp" alt="accubattery"></a>
                 </div>
             </div>
-        </section>
+            </section>
 
-        <section class="fontIOS" style="width: 70%;">
+            <section class="fontIOS">
             <h1 class="textoSO" id="jumpAS">
                 Aplicaciones Exclusivas de App Store
             </h1>
@@ -104,9 +110,9 @@
                     <a href="https://apps.apple.com/es/app/timepage-de-moleskine-studio/id989178902"><img src="images/Timepage.webp" alt="timepage"></a>
                 </div>
             </div>
-        </section>
+            </section>
 
-        <section id="jumpSO" style="width: 70%;">
+            <section id="jumpSO">
             <h1 class="textoSO">
                 Aplicaciones de ambos SO
             </h1>
@@ -177,9 +183,12 @@
                     <img src="images/FaceBook.webp" alt="facebook">
                 </div>
             </div>
+            </section>
         </section>
+    </div>
 
-        <aside style="width: 30%; flex-direction: column;">
+    <section class="no-parallax-content">
+        <aside style="flex-direction: column;">
             <div id="aside">
                 <h1 style="margin: 1.5em;">O visitar las tiendas de App's oficiales...</h1>
                 <div style="margin: 1.5em;">
@@ -192,13 +201,16 @@
                 </div>
             </div>
         </aside>
+    </section>
     </div>
 
-    <footer>
-        <div class="footerContent">
-            <p>Footer text</p>
-            <p>Footer text</p>
-        </div>
-    </footer>
+    <section class="no-parallax-content">
+        <footer>
+            <div class="footerContent" >
+                <p>Footer text</p>
+                <p>Footer text</p>
+            </div>
+        </footer>
+    </section>
 </body>
 </html>
