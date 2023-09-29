@@ -17,17 +17,17 @@
     font-family: Prompt, sans-serif;
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 body{
-    background-color: rgba(0, 191, 255, 0.025);
     overflow: hidden;
     overflow-y: auto;
 }
 
 .fontAndroid{
     font-family: Google-Sans, sans-serif;
-    color: black;
+    color: grey;
     margin-bottom: 0;
     text-align: center;
     text-shadow: 5px 5px 5px rgba(95, 99, 104, 50%);
@@ -35,16 +35,14 @@ body{
 
 .fontIOS{
     font-family: San-Frnacisco, sans-serif;
-    color: #1d1d1f;
+    color: gray;
     margin-bottom: 0;
     text-align: center;
     text-shadow: 5px 5px 5px rgba(95, 99, 104, 35%);
 }
 
 #shadowHeaderBottom{
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    box-shadow: 0 -8px 8px rgba(177, 177, 177), 0 -4px 4px rgba(177, 177, 177), 0 -2px 2px rgba(177, 177, 177);
+    box-shadow: 0 8px 8px rgba(177, 177, 177), 0 4px 4px rgba(177, 177, 177), 0 2px 2px rgba(177, 177, 177);
 }
 
 nav ul{
@@ -76,7 +74,7 @@ nav ul li h1 a{
     margin-bottom: 0;
     font-size: 3.2em;
     text-align: center;
-    color: black;
+    color: white;
     text-shadow: 5px 5px 5px rgba(95, 99, 104, 50%);
 }
 
@@ -84,7 +82,7 @@ nav ul li h1 a{
     margin: 0;
     font-size: 1.5em;
     text-align: center;
-    color: rgb(127, 127, 127);
+    color: whitesmoke(127, 127, 127);
     text-shadow: 5px 5px 5px rgba(95, 99, 104, 50%);
 }
 
@@ -149,7 +147,7 @@ nav ul li h1 a{
 
 .footerContent{
     display: flex;
-    height: 10vh;
+    height: 15vh;
     align-items: center;
     justify-content: space-evenly;
     box-shadow: 0 -8px 8px rgba(177, 177, 177), 0 -4px 4px rgba(177, 177, 177), 0 -2px 2px rgba(177, 177, 177);
@@ -168,4 +166,19 @@ nav ul li h1 a{
 .no-parallax-content{
     z-index: 3;
     transform: translateZ(0px) scale(1);
+}
+
+.iconsFooter{
+    width: 7.5vh;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+}
+
+.parallax-bg-body{
+    background-position: center center;
+    transform: translateZ(0) scale(1);
+    background-size: cover;
+    z-index: -1;
+    
 }
